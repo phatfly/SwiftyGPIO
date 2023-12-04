@@ -340,9 +340,9 @@ public final class RaspberryGPIO: GPIO {
                 break
             }
         }
-        guard mem_fd > 0 else {
-            fatalError("Can't open /dev/mem , use sudo!")
-        }
+        // guard mem_fd > 0 else {
+        //     fatalError("Can't open /dev/mem , use sudo!")
+        // }
 
         let gpio_map = mmap(
             nil,                 //Any adddress in our space will do
