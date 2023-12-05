@@ -437,7 +437,7 @@ public struct SwiftyGPIO {
 
 // MARK: - Global Enums
 
-public enum SupportedBoard: String {
+public enum SupportedBoard: String, CaseIterable {
     case RaspberryPiRev1   // Pi A,B Revision 1
     case RaspberryPiRev2   // Pi A,B Revision 2
     case RaspberryPiPlusZero // Pi A+,B+,Zero with 40 pin header
